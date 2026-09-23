@@ -14,3 +14,4 @@ class Solution {
 // maintain two pointer to preserve the order of the numbers
 // i will scan the whole array 
 // j will point to the next avaliable position to non-zero
+// T.C = O(n) S.C = O(1)
