@@ -1,0 +1,16 @@
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int j = 0;
+        for( int i = 0 ; i < nums.length ; i++){
+            if(nums[i] != 0){
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            j++;
+            }
+        }
+    }
+}
+// maintain two pointer to preserve the order of the numbers
+// i will scan the whole array 
+// j will point to the next avaliable position to non-zero
